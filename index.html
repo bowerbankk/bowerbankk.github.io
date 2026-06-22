@@ -1,31 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Eric Bowerbank Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Eric Bowerbank - Portfolio</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Bowerbank Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <h2>Open Source Projects</h2> 
-
-        <div class="main_item">
-            <p><b>NaloxAware</b> - a nonprofit website</p>
-            <p><a href="https://github.com/NaloxAwareHost/NaloxAwareHost.github.io" target="_blank">GitHub repository</a>
-                |
-                <a href="https://www.naloxaware.org/" target="_blank">Website link</a>
-            </p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Eric Bowerbank</h1>
         </div>
+    </header>
 
-        <div class="main_item">
-            <p><b>SweatSink</b> - an Android fitness app</p>
-            <a href="https://github.com/SamShowkati/CMPT276-SweatSink" target="_blank">GitHub repository</a>
-        </div>
-        
-        <h2>Links</h2> 
+    <main>
 
-        <div class="main_item">
-            <a href="https://github.com/bowerbankk" target="_blank">GitHub profile</a>
-        </div>
-    </body>
+        <section class="section">
+            <h2 class="section-label">Projects</h2>
+
+            <div class="cards-grid">
+
+                <article class="card">
+                    <div class="card-visual">
+                        <div class="card-gfx">
+                            <img class="card-icon" src="assets/naloxaware.jpg" />
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-links">
+                                <a href="https://github.com/NaloxAwareHost/NaloxAwareHost.github.io" target="_blank" class="btn btn--outline">GitHub</a>
+                                <a href="https://www.naloxaware.org/" target="_blank" class="btn btn--fill">Visit Site →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Organization Website</span>
+                        <h3 class="card-title">NaloxAware</h3>
+                        <p class="card-desc">A public health website raising awareness about naloxone access and opioid overdose prevention.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-visual">
+                        <div class="card-gfx">
+                            <img class="card-icon" src="/assets/sweatsink.jpg" />
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-links">
+                                <a href="https://github.com/SamShowkati/CMPT276-SweatSink" target="_blank" class="btn btn--fill">View on GitHub →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Android App</span>
+                        <h3 class="card-title">SweatSink</h3>
+                        <p class="card-desc">An Android fitness app that makes logging workouts and tracking progress simple and satisfying.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-label">Links</h2>
+            <div class="links-row">
+                <a href="https://github.com/bowerbankk" target="_blank" class="link-pill">
+                    <img src="assets/GitHub_Invertocat_White.svg"  width="17" height="17" aria-hidden="true" />
+                    GitHub Profile
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Eric Bowerbank</p>
+    </footer>
+
+</body>
 </html>
